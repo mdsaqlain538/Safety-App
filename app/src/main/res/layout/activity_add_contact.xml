@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddContact"
+    android:background="#98F5DF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Emergency Contacts:"
+        android:textSize="30dp"
+        android:textColor="#fff"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:layout_height="wrap_content"></TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contact:1"
+        android:id="@+id/cnt_1"
+        android:shadowColor="#000"
+        android:textCursorDrawable="@color/colorblack"
+        android:textColor="#181717"
+        android:layout_marginTop="90dp"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Contact:2"
+        android:id="@+id/cnt_2"
+        android:shadowColor="#000"
+        android:textCursorDrawable="@color/colorblack"
+        android:textColor="#181717"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="COntact:3"
+        android:id="@+id/cnt_3"
+        android:shadowColor="#000"
+        android:layout_marginTop="20dp"
+        android:textCursorDrawable="@color/colorblack"
+        android:textColor="#181717"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:hint="Contact:4"
+        android:id="@+id/cnt_4"
+        android:shadowColor="#000"
+        android:textCursorDrawable="@color/colorblack"
+        android:textColor="#181717"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+    </EditText>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Add"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="75dp"
+        android:id="@+id/add"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="saqlain"
+        android:textSize="26dp"
+        android:id="@+id/text"
+        android:layout_height="wrap_content"></TextView>
+
+
+
+</LinearLayout>

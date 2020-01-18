@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:padding="6dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Hello,user"
+                android:textSize="16dp"
+                android:layout_weight="0.8"
+                android:gravity="center"
+                android:id="@+id/showName"
+                android:layout_height="wrap_content">
+            </TextView>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="0.2"
+                android:text="start"
+                android:layout_marginTop="10dp"
+                android:layout_height="match_parent">
+            </Button>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"
+            android:layout_height="0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="033">
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="16dp"
+                            android:hint="From:"
+                            android:layout_marginRight="16dp"
+                            android:layout_height="50dp"></EditText>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent">
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="16dp"
+                            android:hint="To:"
+                            android:layout_marginRight="16dp"
+                            android:layout_height="50dp"></EditText>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="033">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="25dp"
+                        android:text="Emergency\nCONtacts"
+                        android:layout_marginBottom="25dp"
+                        android:background="#98F5DF"
+                        android:id="@+id/emergency"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                    </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="Emergency\nMessages"
+                        android:layout_marginTop="25dp"
+                        android:background="#98F5DF"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp">
+                    </Button>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="033">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="25dp"
+                        android:text="Request\n Vechile"
+                        android:background="@color/holo_blue_8"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp">
+
+                    </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:layout_marginTop="25dp"
+                        android:text="Safe ZOne"
+                        android:background="#98F5DF"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="10dp">
+                    </Button>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:text="Sign Out"
+                    android:id="@+id/btnLogout"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
