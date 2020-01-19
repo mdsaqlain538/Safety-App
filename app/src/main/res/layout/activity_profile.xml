@@ -27,6 +27,7 @@
 
 
             <Button
+                android:id="@+id/startService"
                 android:layout_width="wrap_content"
                 android:layout_weight="0.2"
                 android:text="start"
@@ -60,25 +61,29 @@
                     <LinearLayout
                         android:layout_width="200dp"
                         android:layout_height="match_parent">
-                        <EditText
+                        <AutoCompleteTextView
+                            android:id="@+id/fromAuto"
                             android:layout_width="match_parent"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="16dp"
                             android:hint="From:"
+                            android:text=""
                             android:layout_marginRight="16dp"
-                            android:layout_height="50dp"></EditText>
+                            android:layout_height="50dp"></AutoCompleteTextView>
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="200dp"
                         android:layout_height="match_parent">
-                        <EditText
+                        <AutoCompleteTextView
+                            android:id="@+id/toAuto"
                             android:layout_width="match_parent"
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="16dp"
                             android:hint="To:"
+                            android:text=""
                             android:layout_marginRight="16dp"
-                            android:layout_height="50dp"></EditText>
+                            android:layout_height="50dp"></AutoCompleteTextView>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -130,6 +135,7 @@
 
                     </Button>
                     <Button
+                        android:id="@+id/btnSafeZone"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="0.5"
