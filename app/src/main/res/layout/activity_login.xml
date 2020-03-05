@@ -5,14 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
+    android:background="#fff"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="20dp">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="username"
+        android:layout_marginTop="150dp"
+        android:shadowColor="#000"
+        android:textColor="#181717"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:textCursorDrawable="@color/colorblack"
         android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/ic_person_black_24dp"
         android:drawablePadding="5dp"
@@ -23,7 +29,13 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="password"
+        android:layout_marginTop="10dp"
         android:inputType="textPassword"
+        android:shadowColor="#000"
+        android:textColor="#181717"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:textCursorDrawable="@color/colorblack"
         android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:drawablePadding="5dp"
@@ -34,14 +46,22 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:text="Login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#000"
+        android:textColor="#fff"
         android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/btnLogin"
         />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Create New Account"
+        android:layout_gravity="center"
+        android:textColor="#000"
         android:clickable="true"
         android:id="@+id/txtCreate"/>
 

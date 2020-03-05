@@ -6,13 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".CreateUser"
     android:orientation="vertical"
-    android:gravity="center"
     android:padding="20dp">
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:hint="username"
+        android:shadowColor="#000"
+        android:textColor="#181717"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
+        android:layout_marginTop="100dp"
         android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/ic_person_black_24dp"
         android:drawablePadding="5dp"
@@ -24,6 +28,11 @@
         android:layout_height="60dp"
         android:hint="password"
         android:inputType="textPassword"
+        android:layout_marginTop="10dp"
+        android:shadowColor="#000"
+        android:textColor="#181717"
+        android:backgroundTint="#000"
+        android:textColorHint="#000"
         android:layout_marginBottom="5dp"
         android:drawableLeft="@drawable/ic_lock_black_24dp"
         android:drawablePadding="5dp"
@@ -31,9 +40,13 @@
         />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:text="Sign Up"
+        android:layout_marginTop="16dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:layout_marginLeft="125dp"
         android:layout_marginBottom="5dp"
         android:id="@+id/btnSignup"/>
 

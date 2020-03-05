@@ -17,11 +17,12 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Hello,user"
+                android:text="Hello,Vickey"
                 android:textSize="16dp"
                 android:layout_weight="0.8"
                 android:gravity="center"
                 android:id="@+id/showName"
+                android:textColor="#000"
                 android:layout_height="wrap_content">
             </TextView>
 
@@ -46,6 +47,14 @@
                 android:layout_height="0dp"
                 android:layout_weight="0.2">
 
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Call"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/holo_green_12"
+                    android:layout_height="wrap_content"></Button>
+
             </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -67,7 +76,8 @@
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="16dp"
                             android:hint="From:"
-                            android:text=""
+                            android:shadowColor="#000"
+                            android:textColorHint="#000"
                             android:layout_marginRight="16dp"
                             android:layout_height="50dp"></AutoCompleteTextView>
                     </LinearLayout>
@@ -81,7 +91,8 @@
                             android:layout_marginTop="50dp"
                             android:layout_marginLeft="16dp"
                             android:hint="To:"
-                            android:text=""
+                            android:shadowColor="#000"
+                            android:textColorHint="#000"
                             android:layout_marginRight="16dp"
                             android:layout_height="50dp"></AutoCompleteTextView>
                     </LinearLayout>
@@ -98,7 +109,8 @@
                         android:layout_marginTop="25dp"
                         android:text="Emergency\nCONtacts"
                         android:layout_marginBottom="25dp"
-                        android:background="#98F5DF"
+                        android:background="#000"
+                        android:textColor="#fff"
                         android:id="@+id/emergency"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="5dp">
@@ -110,7 +122,8 @@
                         android:layout_weight="0.5"
                         android:text="Emergency\nMessages"
                         android:layout_marginTop="25dp"
-                        android:background="#98F5DF"
+                        android:background="#000"
+                        android:textColor="#fff"
                         android:layout_marginBottom="25dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="10dp">
@@ -128,7 +141,8 @@
                         android:layout_weight="0.5"
                         android:layout_marginTop="25dp"
                         android:text="Request\n Vechile"
-                        android:background="@color/holo_blue_8"
+                        android:textColor="#fff"
+                        android:background="#000"
                         android:layout_marginBottom="25dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="5dp">
@@ -141,7 +155,8 @@
                         android:layout_weight="0.5"
                         android:layout_marginTop="25dp"
                         android:text="Safe ZOne"
-                        android:background="#98F5DF"
+                        android:background="#000"
+                        android:textColor="#fff"
                         android:layout_marginBottom="25dp"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="10dp">
@@ -158,6 +173,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:text="Sign Out"
+                    android:textColor="#000"
                     android:id="@+id/btnLogout"/>
 
             </LinearLayout>

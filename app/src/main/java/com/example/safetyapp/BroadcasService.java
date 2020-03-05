@@ -40,7 +40,7 @@ public class BroadcasService extends Service {
                 if (action.equals("android.media.VOLUME_CHANGED_ACTION")) {
                     count ++;
                     if(count % 9 == 0){
-                        String dail = "7995830577";
+                        String dail = "7989111489";
                         dail = "tel:" + dail;
                         if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                             return;

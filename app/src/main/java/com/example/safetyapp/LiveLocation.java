@@ -95,7 +95,6 @@ public class LiveLocation extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         listView = findViewById(R.id.safelist1);
         callSApi();
-        startService();
         stop =findViewById(R.id.stopService);
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,6 +126,7 @@ public class LiveLocation extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(Dest).title("Destination"));
         mMap.addPolyline(polylineOptions.add(myloc).add(Dest).width(10f).color(R.color.colorblack));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myloc,15.0f));
+        startService();
     }
 
     private void callSApi() {
@@ -198,7 +198,7 @@ public class LiveLocation extends FragmentActivity implements OnMapReadyCallback
         Toast.makeText(getApplicationContext(),"In Service", Toast.LENGTH_SHORT).show();
         Intent serviceIntent = new Intent(LiveLocation.this, BroadcasService.class);
         serviceIntent.putExtra("inputExtra", "Triple click volume down in emergency");
-        ContextCompat.startForegroundService(LiveLocation.this, serviceIntent);
+        startService(serviceIntent);
     }
     public void stopService() {
         Intent serviceIntent = new Intent(LiveLocation.this, BroadcasService.class);
